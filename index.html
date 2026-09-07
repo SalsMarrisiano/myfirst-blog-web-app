@@ -11,35 +11,37 @@
         <h1 class="heads">THISISIVER34 #BLOG @2026</h1>
     </header>
     <hr>
-    <div class="search-container">
-        <input class="search" placeholder="search for specfic blog">
-        <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
-        <a href="login.html" class="search">
-            <button><i class="fa-solid fa-lock"></i></button>
-        </a>
+   <div class="content-wrap">
+        <div class="search-container">
+            <input class="search" placeholder="search for specfic blog">
+            <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <a href="login.html" class="search">
+                <button><i class="fa-solid fa-lock"></i></button>
+            </a>
+        </div>
+        <section class="main">
+            <div class="blogs_sec">
+                <div class="blog1">
+                </div>
+            </div>
+            <div class="about_sec">
+                <div class="about_sec-container">
+                    <div class="img-container">
+                        <img id="profilepic" src="IMG_6340.JPG" alt="picture of thisisiver34">
+                    </div>
+                    <div class="text-container">
+                        <h2>@thisisiver34</h2>
+                        <p> Born in 2012, thisisiver34 made this page in 2026 from scratch.
+                                                Front-end, back-end, even the APIs. They had a lot of fun doing so.
+                        <br>
+                        <br>
+                        I don't know what to put here. Follow my instagram @iver.7997!
+                        </p>
+                    </div>
+                </div>
+            </div>        
+        </section>
     </div>
-    <section class="main">
-        <div class="blogs_sec">
-            <div class="blog1">
-            </div>
-        </div>
-        <div class="about_sec">
-            <div class="about_sec-container">
-                <div class="img-container">
-                    <img id="profilepic" src="IMG_6340.JPG" alt="picture of thisisiver34">
-                </div>
-                <div class="text-container">
-                    <h2>@thisisiver34</h2>
-                    <p> Born in 2012, thisisiver34 made this page in 2026 from scratch.
-                                            Front-end, back-end, even the APIs. They had a lot of fun doing so.
-                    <br>
-                    <br>
-                    I don't know what to put here. Follow my instagram @iver.7997!
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
     <script src="https://kit.fontawesome.com/d63d8c898c.js" crossorigin="anonymous"></script>
     <script>
         function loadPosts() {
@@ -85,8 +87,6 @@
         }
 
         document.addEventListener('DOMContentLoaded', loadPosts);
-
-
     </script>
 </body>
 </html>

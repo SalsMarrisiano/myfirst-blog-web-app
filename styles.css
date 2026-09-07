@@ -12,6 +12,13 @@
     box-sizing: border-box;
 }
 
+.content-wrap {
+    background-color: #BF8764;  
+    min-height: 100vh;
+    padding-top: 0;  
+    padding-bottom: 2rem;
+}
+
 html {
     margin: 0;
     padding: 0;
@@ -144,6 +151,7 @@ input {
 }
 
 .about_sec-container {
+    background-color: #BF8764;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -157,7 +165,6 @@ input {
     justify-content: space-between;
     background-color: #BF8764;
     margin: 0;
-    min-height: 100vh;
 }
 
 .img-container {
