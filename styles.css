@@ -73,6 +73,7 @@ hr {
     display: flex;
     justify-content: left;
     gap: 1%;
+    background-color: #BF8764;
 }
 
 .search {
