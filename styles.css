@@ -282,8 +282,8 @@ input {
 
     .blogs_sec_text {
         width: 100%;
-        text-align: center;
-        padding: 2px;
+        text-align: left;
+        padding: 3px;
         box-sizing: border-box;
         border-radius: 16px;
     }
