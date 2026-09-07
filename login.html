@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThisIsIver34 // Login</title>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #e6e2bd;
+        }
+
+        .head {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 6vh;
+            max-height: 10vh;
+            font-size: clamp(1.5rem, 2vm, 3vh);
+            font-weight: 600;
+            background-color: #c96a49;
+            color: #ffff;
+            width: 100%;
+            padding: 0.55%;
+            box-sizing: border-box;
+            padding-top: max(0.8rem, env(safe-area-inset-top, 0.8rem));
+        }
+
+        hr {
+            top: 0;
+            margin-top: 0;
+            color: #000000;
+            background-color: #000000;
+            text-decoration: none;
+        }
+
+        .login-form {
+            margin-left: 2vh;
+            margin-top: 4vh;
+            display: flex;
+            flex-direction: column;
+            min-width: 20vh;
+            max-width: 30vh;
+            gap: 3vh;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        button {
+            width: 50%
+        }
+
+
+        @media (max-width: 720px) {
+            .head {
+                min-height: 15vh;
+                max-height: 17vh;
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+        @media (max-height: 450px) {
+            .head {
+                min-height: 20vh;
+                max-height: 30vh;
+            }
+            button {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>Login to access editor</h1>
+    </div>
+    
+    <hr>
+
+        <form class="login-form">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div>
+                <label for="password">Password:</label>
+
+                <input type="password" name="password" id="password">
+            </div>
+        
+            <button type="submit">Submit</button>
+        </form>
+
+
+    <script>
+        const loginForm = document.querySelector('.login-form');
+        const loginInput = document.querySelector('#username');
+        const passwordInput = document.querySelector('#password');
+
+        loginForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const correctUsername = "thisisiver34";
+            const correctPassword = "Ihateiver*";
+
+            if (loginInput.value == correctUsername && passwordInput.value == correctPassword) {
+                
+                window.location.href = "admin.html";
+                
+            } else {
+
+                alert("Incorrect username or password. Try again!");
+            }
+        });
+    </script>
+</body>
+</html>

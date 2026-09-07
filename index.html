@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <title>ThisIsIver34 Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <header>
+        <h1 class="heads">THISISIVER34 #BLOG @2026</h1>
+    </header>
+</head>
+<body>
+    <hr>
+    <div class="search-container">
+        <input class="search" placeholder="search for specfic blog">
+        <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <a href="login.html" class="search">
+            <button><i class="fa-solid fa-lock"></i></button>
+        </a>
+    </div>
+    <section class="main">
+        <div class="blogs_sec">
+            <div class="blog1">
+            </div>
+        </div>
+        <div class="about_sec">
+            <div class="about_sec-container">
+                <div class="img-container">
+                    <img id="profilepic" src="IMG_6340.JPG" alt="picture of thisisiver34">
+                </div>
+                <div class="text-container">
+                    <h2>@thisisiver34</h2>
+                    <p> Born in 2012, thisisiver34 made this page in 2026 from scratch.
+                                            Front-end, back-end, even the APIs. They had a lot of fun doing so.
+                    <br>
+                    <br>
+                    I don't know what to put here. Follow my instagram @iver.7997!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/d63d8c898c.js" crossorigin="anonymous"></script>
+    <script>
+        function loadPosts() {
+            const container = document.querySelector('.blogs_sec')
+
+        if (!container) {
+            console.error('Container .blogs_sec not found!');
+            return;
+        }
+            const posts = localStorage.getItem('blogPosts');
+
+            if (!posts || posts === 'undefined') {
+                container.innerHTML = '<p>No posts yet.</p>';
+                return;
+            }
+
+            let blogPosts = [];
+            try {
+                blogPosts = JSON.parse(posts);
+            } catch (e) {
+                console.error('Failed to parse blog posts:', e);
+                container.innerHTML = '<p>No posts yet.</p>';
+                return;
+            }
+
+            if (!Array.isArray(blogPosts) || blogPosts.length === 0) {
+                container.innerHTML = '<p>No posts yet.</p>';
+                return;
+            }
+
+            container.innerHTML = '';
+
+            blogPosts.forEach(post => {
+                container.innerHTML += `
+                    <div class="blog1">
+                        <h2 class="blogs_sec_text">${post.title}</h2>
+                        <p class="blogs_sec_text">${post.date}</p>
+                        ${post.lastEdited ? `<p class="blogs_sec_text">Last Edited: ${post.lastEdited}</p>` : ''}
+                        <p class="blogs_sec_text">${post.content}</p>
+                    </div>
+                `;
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', loadPosts);
+
+
+    </script>
+</body>
+</html>
