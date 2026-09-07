@@ -262,6 +262,9 @@ input {
 
 
 @media (max-width: 420px) {
+    .content-wrap {
+        width: 100%;
+    }
     .heads {
         font-size: clamp(1.4rem, 5vw, 2rem);
         padding: 0.6rem 0.8rem;
