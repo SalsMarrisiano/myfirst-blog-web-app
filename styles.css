@@ -270,7 +270,9 @@ input {
     }
 
     .blog_sec {
-        width: 70%;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
         box-sizing: border-box;
         border-radius: 16px;
     }
@@ -278,6 +280,7 @@ input {
     .blogs_sec_text {
         width: 100%;
         text-align: center;
+        padding: 2px;
         box-sizing: border-box;
         border-radius: 16px;
     }
