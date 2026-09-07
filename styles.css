@@ -284,7 +284,8 @@ input {
         width: 100%;
         text-align: left;
         padding: 3px;
-        padding-left: 2vh;
+        padding-left: 1vh;
+        padding-right: 1vh;
         box-sizing: border-box;
         border-radius: 16px;
     }
