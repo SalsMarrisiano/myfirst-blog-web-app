@@ -15,7 +15,6 @@
 html {
     margin: 0;
     padding: 0;
-    background-color: #774936;
     width: 100%;
 }
 
@@ -26,6 +25,7 @@ body {
     padding-left: env(safe-area-inset-left, 0px);
     padding-right: env(safe-area-inset-right, 0px);
     padding-bottom: env(safe-area-inset-bottom, 0px);
+    background-color: #774936;
     width: 100%;
 }
 .heads {
@@ -130,6 +130,7 @@ input {
 }
 
 .about_sec {
+    background-color: #BF8764;
     width: 30%;
     padding: 1.9% 3% 1%;
     display: block;
@@ -153,6 +154,7 @@ input {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: #BF8764;
     margin: 0;
 }
 
