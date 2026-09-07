@@ -45,7 +45,6 @@ body {
     padding: 2px;
     width: 100%;
     padding-top: max(0.8rem, env(safe-area-inset-top, 0.8rem));
-    padding-bottom: max(0.8rem, env(safe-area-inset-top, 0.8rem));
     box-sizing: border-box;
     border: none;
     margin: 0;
