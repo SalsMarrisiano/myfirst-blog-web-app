@@ -175,6 +175,9 @@ input {
 
 .text-container p {
     font-family: Archivo;
+    text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 #profilepic {
@@ -252,7 +255,7 @@ input {
 
     .text-container p {
         font-size: 1rem;
-        max-width: 90%;
+        max-width: 100%;
         text-align: center;
     }
 }
@@ -273,10 +276,10 @@ input {
     }
 
     .blogs_sec_text {
-        width: 70%;
+        width: 100%;
+        text-align: center;
         box-sizing: border-box;
         border-radius: 16px;
-        padding-left: 1vh;
     }
 
     #profilepic {
